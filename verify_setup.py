@@ -96,7 +96,7 @@ def check_git_setup():
     if not is_git_repo():
         print("FAIL: not a Git repository")
         return False
-    print("Git repo detected")
+    #print("Git repo detected")
     return has_venv_ignore()
 
 def has_venv_ignore(gitignore_path: str = ".gitignore") -> bool:
@@ -112,7 +112,7 @@ def has_venv_ignore(gitignore_path: str = ".gitignore") -> bool:
             continue
         # matches "venv/", "/venv", "venv" (bare directory also covers venv/)
         if line in ("venv/", "/venv", "venv"):
-            print(f"OK: found '{line}' in {gitignore_path}")
+            #print(f"OK: found '{line}' in {gitignore_path}")
             return True
 
     print(f"FAIL: 'venv/' not found in {gitignore_path}")

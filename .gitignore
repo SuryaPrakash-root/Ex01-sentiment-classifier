@@ -20,7 +20,6 @@ __pycache__
 #Environment File
 .env
 .env.local
-.enc.example
 
 #Model Files
 *.pt
@@ -40,3 +39,7 @@ logs/
 dist/
 build/
 *.egg-info/
+
+#Extra
+wandb/
+temp/
