@@ -1,0 +1,42 @@
+#Gitignore
+
+#Virtual Environment
+venv
+.venv
+env
+virtualenv
+
+#Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+#IDF Files
+.vscode/
+.idea/
+*.swp
+
+#Environment File
+.env
+.env.local
+.enc.example
+
+#Model Files
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+#Data Files
+data/*.csv
+data/*.json
+
+#Log Files
+*.log
+logs/
+
+#Distribution Files
+dist/
+build/
+*.egg-info/
